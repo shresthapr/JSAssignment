@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TLQQXRK");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Prajan Shrestha" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <title>Portfolio 8</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="stylesheet" href="./assets/CSS/animation.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/Images/Group_4.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/dd61ad13c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TLQQXRK"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div id="logo">
+        <a href="index.html">MyWeb</a>
+      </div>
+
+      <nav>
+        <a onclick="mobilemenu()" href="#" class="icon"
+          ><span class="material-icons"> menu</span></a
+        >
+        <ul>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="#footer">Contact me</a></li>
+          <li><a href="gallery.html" target="_Self">Gallery</a></li>
+          <li>
+            <a>More <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#experience">Experience</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="#footer">Contact me</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-banner">
+        <h1>Welcome to my <span>Portfolio</span> page</h1>
+        <div class="leaf">
+            <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+            <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+            <div><img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+            <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+             
+          </div>
+      </section>
+    </main>
+    
+    <footer id="footer">
+      <h2>Contact me</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message to me</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <p>Copyright &copy; My Website 2020</p>
+      <div id="scrolltop">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </footer>
+    <script src="./assets/Javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+/*****DropDown******/
+
+header nav ul li ul {
+  min-width: 100%;
+}
+
+/**************Collage Styleing********/
+main h1,
+p {
+  margin-top: 1rem;
+}
+#img-collection {
+  background: white;
+}
+.main-content {
+  width: 80%;
+  overflow: scroll;
+  margin: 0 auto;
+}
+.image-group {
+  display: grid;
+  grid-template-areas:
+    "z z z z z "
+    "a a b b d"
+    "a a b b d"
+    "a a c c d"
+    "e e c c d"
+    "e e c c d"
+    "f f f g g"
+    "f f f g g"
+    "h h i g g"
+    "h h i g g"
+    "j j j j j";
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, 2fr);
+
+  margin-bottom: 2rem;
+}
+
+.grid-div {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.grid-img:hover {
+  transform: scale(1.1);
+}
+.grid-box {
+  grid-area: z;
+}
+.grid-box1 {
+  grid-area: a;
+}
+.grid-box2 {
+  grid-area: b;
+}
+.grid-box3 {
+  grid-area: c;
+}
+.grid-box4 {
+  grid-area: d;
+}
+.grid-box5 {
+  grid-area: e;
+}
+.grid-box6 {
+  grid-area: f;
+}
+.grid-box7 {
+  grid-area: g;
+}
+.grid-box8 {
+  grid-area: h;
+}
+.grid-box9 {
+  grid-area: i;
+}
+.grid-box10 {
+  grid-area: i;
+}
+.grid-box11 {
+  grid-area: j;
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    width: 90%;
+  }
+  .image-group {
+    display: flex;
+    flex-direction: column;
+  }
+}

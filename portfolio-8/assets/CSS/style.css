@@ -1,0 +1,513 @@
+/*-------GLOBAL SETTING ---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+:root {
+  --background-color: #333333;
+  --dark-color: #000000;
+  --bright-color: #ffffff;
+  --link-color: blue;
+  --hover-color: coral;
+  --font-regular: "PT Sans", sans-serif;
+  --herotext: "Ubuntu Mono", monospace;
+  --light-background-color: #f4f4ff;
+  --background-grey: grey;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--font-regular);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 3rem;
+  min-height: 30vh;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--hovercolor);
+}
+
+p {
+  margin-bottom: 0.8rem;
+  line-height: 2;
+}
+
+h2,
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea,
+button {
+  font-family: var(--font-regular);
+}
+/*------Header area starts from here-------*/
+
+header {
+  background-color: var(--background-color);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 1000;
+}
+
+header #logo a {
+  color: var(--hover-color);
+  font-size: 2rem;
+}
+
+/*--------Main navigation content starts here------ */
+
+header .icon {
+  display: none;
+}
+
+header nav ul {
+  margin-right: 2rem;
+  position: relative;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  display: block;
+  color: var(--bright-color);
+  padding: 1rem;
+  transition: all 0.5s;
+  border-bottom: 3px solid transparent;
+}
+
+header nav ul li a:hover,
+header nav ul li ul li a:hover {
+  background-color: var(--hover-color);
+  border-bottom: 3px solid var(--bright-color);
+}
+/* -----Main Navigation ENDS--------*/
+/* ---Dropdown styling section starts----*/
+
+header nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: var(--background-color);
+  top: 50px;
+  width: 30%;
+}
+
+header nav ul li ul li {
+  display: block;
+}
+
+header nav ul li ul li a {
+  padding: 1rem;
+  transition: all 2s;
+}
+
+header nav ul li:hover ul,
+header nav ul li:focus-within > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* dropdown styling section ends */
+/*----------- Main section starts here --------*/
+main {
+  position: relative;
+  top: 5rem;
+}
+
+/* Hero banner section starts from here */
+main #hero-banner {
+  background: url("https://source.unsplash.com/1600x900/?time") no-repeat fixed
+    center center/cover;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #hero-banner h1 {
+  color: var(--bright-color);
+  font-size: 5rem;
+  font-family: var(--herotext);
+  z-index: 3;
+}
+
+main #hero-banner h1 span {
+  color: var(--hover-color);
+}
+
+main #hero-banner::before {
+  position: absolute;
+  content: "";
+  height: inherit;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+/*---------Hero Section ENDS---------*/
+/*-------Work Section STARTS---------*/
+
+main #work {
+  background-color: var(--light-background-color);
+}
+
+main #work .work_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #work .box {
+  background-color: var(--bright-color);
+  height: 30%;
+  width: 30%;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 2px 0 5px var(--dark-color);
+}
+
+main #work .box img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+main #work .box a:hover {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+/*----------Work Section ENDS-------*/
+/* -------Experience section STARTS from here -----*/
+
+main #experience {
+  display: flex;
+  background-color: var(--bright-color);
+}
+
+main #experience img {
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+main #experience .content {
+  padding: 2rem;
+}
+
+/*---------Skills Section STARTS from here---------- */
+
+main #skills {
+  background: url("https://source.unsplash.com/1600x900/?future") no-repeat
+    fixed center center/cover;
+  padding: 3rem;
+}
+
+main #skills .container {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#skills .container .skillbox {
+  display: flex;
+  justify-content: space-between;
+}
+#skills .container .skillbox .expertbox {
+  background-color: var(--background-grey);
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 2px;
+  box-shadow: 10px 10px 5px var(--dark-color);
+}
+
+#skills .expertbox p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills .expertbox progress {
+  border-radius: 2px;
+  height: 1rem;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px rgba(22, 21, 21, 0.2);
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--bright-color);
+  border-radius: 2px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--dark-color);
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(255, 0, 0, 0.8);
+}
+
+#skills .container .skillbox .expertbox a {
+  display: flex;
+}
+#skills .container .skillbox .expertbox i {
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--dark-color);
+  text-shadow: 1px 1px 2px rgb(58, 55, 51);
+}
+#skills .container .skillbox .expertbox:nth-child(2n + 1) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#skills .container .skillbox .expertbox:last-child {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#skills .container .skillbox .expertbox:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*****Future ENDS here*******/
+/*__________Footer Section STARTS here__________ */
+
+footer {
+  color: var(--bright-color);
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 1.5rem;
+  position: relative;
+  top: 5rem;
+}
+
+footer h4 {
+  font-size: 0.8rem;
+  margin-top: 3rem;
+}
+
+/*****FORM Section starts here*******/
+
+footer form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+}
+
+footer form .form-group label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+form .form-group input,
+form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 30%;
+  font-size: 1rem;
+}
+
+footer form button {
+  background-color: var(--hover-color);
+  border-radius: 5px;
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--bright-color);
+  font-size: inherit;
+  margin-left: -50px;
+}
+
+footer form button:hover {
+  cursor: pointer;
+  background-color: var(--link-color);
+  transition: all 0.4s;
+}
+/*---------FORm Section ENDS--------*/
+/**** SCROLL TOP *******/
+
+#scrolltop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgba(110, 105, 105, 0.7);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scrolltop i {
+  color: var(--hover-color);
+  font-size: 25px;
+}
+
+/*-----Desktop>>>>Tab>>>Mobile------*/
+
+@media (max-width: 899px) {
+  #hero-banner h1 {
+    margin-left: 6rem;
+  }
+  main #experience {
+    display: block;
+  }
+  main #experience img {
+    width: 100%;
+  }
+
+  #skills .container .skillbox .expertbox i {
+    width: 100%;
+    font-size: 4rem;
+  }
+  #skills .container .skillbox .expertbox p {
+    font-size: 12px;
+  }
+  #skills .container .skillbox .expertbox progress {
+    width: 100%;
+  }
+  footer form {
+    width: 80%;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  form .form-group input,
+  form .form-group textarea {
+    width: 100%;
+  }
+
+  footer form button {
+    width: 100%;
+    margin: 0;
+  }
+  #scrolltop {
+    right: 1rem;
+  }
+}
+/*--------MOBILE--------*/
+
+@media (max-width: 576px) {
+  header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  header .icon {
+    display: block;
+    color: var(--bright-color);
+  }
+  header nav ul {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background-color: var(--background-color);
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  header nav ul.mobilemenu {
+    display: block;
+  }
+
+  header nav ul li {
+    display: block;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 0.7rem;
+  }
+  header nav ul li a:hover {
+    background-color: var(--hover-color);
+  }
+
+  header nav ul li ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    position: relative;
+    top: 0;
+    padding-left: 2rem;
+    width: 100%;
+  }
+
+  main #hero-banner h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  main #work .work_boxes {
+    flex-direction: column;
+  }
+  main #work .box {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .container,
+  main #experience .content {
+    padding: 1rem;
+  }
+  main #skills img {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  main #skills {
+    padding: 2rem;
+  }
+  main #skills h2 {
+    margin-bottom: 0;
+  }
+
+  #skills .container .skillbox {
+    flex-direction: column;
+  }
+  #skills .container .skillbox .expertbox {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  #skills .container .skillbox .expertbox i {
+    font-size: 3em;
+    padding: 0.5rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+
+  #footer {
+    padding-bottom: 0.5rem;
+  }
+  footer form .form-group {
+    margin: 1rem 0;
+  }
+  footer form .form-group label {
+    margin-bottom: 0.1rem;
+  }
+  #footer p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  #scrolltop {
+    right: 0.5rem;
+    height: 30px;
+    width: 30px;
+  }
+}
