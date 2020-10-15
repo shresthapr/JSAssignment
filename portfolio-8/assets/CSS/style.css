@@ -347,10 +347,10 @@ footer form button {
   background-color: var(--hover-color);
   border-radius: 5px;
   border: none;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   color: var(--bright-color);
   font-size: inherit;
-  margin-left: -50px;
+  margin-left: 12rem;
 }
 
 footer form button:hover {
@@ -358,6 +358,16 @@ footer form button:hover {
   background-color: var(--link-color);
   transition: all 0.4s;
 }
+
+#footer #resetme {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font: var(--font-regular);
+  border: none;
+  box-shadow: 2px 2px 0px var(--dark-color);
+  margin-left: 4rem;
+}
+
 #footer p {
   padding-top: 1rem;
 }
@@ -426,6 +436,10 @@ footer #contactinfo .profileimage {
   footer form button {
     width: 100%;
     margin: 0;
+  }
+  #footer #resetme {
+    margin-top: 1rem;
+    margin-left: 0rem;
   }
   #scrolltop {
     right: 1rem;
@@ -527,6 +541,9 @@ footer #contactinfo .profileimage {
   }
   footer form .form-group label {
     margin-bottom: 0.1rem;
+  }
+  #footer #resetme {
+    padding: 0.8rem 2rem;
   }
   #footer p {
     margin-top: 1rem;

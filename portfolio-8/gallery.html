@@ -30,6 +30,13 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/portfolio-8/slick-1.8.1 2/slick/slick-theme.css"
+    />
+
     <link
       rel="shortcut icon"
       href="/assets/Images/Group_4.png"
@@ -70,11 +77,23 @@
 
             <ul>
               <li><a href="myanimation.html">Animation</a></li>
-              <li><a href="index.html#work">Work</a></li>
-              <li><a href="index.html#experience">Experience</a></li>
 
-              <li><a href="index.html#skills">Skills</a></li>
               <li><a href="#footer">Contact me</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/prajan-shrestha-505259113/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#index.html">
+                  <span class="material-icons"> share</span></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/shresthapr" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -88,6 +107,70 @@
             Images source:
             <a href="https://unsplash.com/" target="_blank">Unsplash</a>
           </p>
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto"
+          >
+            Login
+          </button>
+          <div id="id01" class="modal">
+            <form class="popup" method="post">
+              <div class="profileimage">
+                <img
+                  src="assets/Images/Screen Shot 2020-10-12 at 3.10.57 PM.png"
+                  alt="profilepicture"
+                  class="avatar"
+                />
+                <span
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="close"
+                  title="Close Modal"
+                  >&times;</span
+                >
+                <input type="file" id="myUpload" name="filename" />
+              </div>
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Username"
+                  name="username"
+                />
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" />
+
+                <label for="password"><b>Password</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter password"
+                  name="password"
+                />
+                <label for="confirm-password"><b>Confirm Password</b></label>
+                <input
+                  type="password"
+                  placeholder="Repeat Password"
+                  name="confirm-password"
+                />
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" />
+                  Remember me</label
+                >
+              </div>
+              <div class="mycontainer">
+                <button
+                  type="button"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+
+                <span class="psw">Forgot <a href="#"> Password?</a></span>
+              </div>
+            </form>
+          </div>
           <div class="image-group">
             <div class="grid-box grid-div">
               <img
@@ -176,8 +259,37 @@
           </div>
         </div>
       </section>
+      <section class="center slider">
+        <div>
+          <img src="https://source.unsplash.com/350x300/?car" />
+        </div>
+        <div>
+          <img src="http://source.unsplash.com/?bird/350x300?text=2" />
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=3" />
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=4" />
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=5" />
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=6" />
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=7" />
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=8" />
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=9" />
+        </div>
+      </section>
     </main>
-    <footer id="footer">
+    <!--<footer id="footer">
       <h2>Contact me</h2>
       <form>
         <div class="form-group">
@@ -192,13 +304,47 @@
           <label for="message">Message to me</label>
           <textarea name="message" id="message"></textarea>
         </div>
-        <button type="submit">Send message</button>
+        <button type="submit" style="width: auto">Send message</button>
+        <label for="reset"> <input id="resetme" type="reset" /></label>
       </form>
       <p>Copyright &copy; My Website 2020</p>
       <div id="scrolltop">
         <a href="#"><i class="fas fa-chevron-up"></i></a>
       </div>
-    </footer>
-    <script src="/assets/Javascript/script.js"></script>
+    </footer> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/portfolio-8/slick-1.8.1 2/slick/slick.min.js"
+    ></script>
+    <script src="/portfolio-8/assets/Javascript/script.js"></script>
+    <script>
+        $(document).on("ready", function () {
+       $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    </script>
   </body>
 </html>
