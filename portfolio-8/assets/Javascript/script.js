@@ -1,4 +1,4 @@
-
+(function ($) {
   //mobile dropdown menu
   const mobilemenu = () => {
     const menu = document.querySelector("ul");
@@ -11,11 +11,13 @@
   var modal = document.getElementById("id01");
 
   //close popup when clicked anywhere outside modal div
-  window.onclick = function (a) {
-    if (a.target === modal) {
+  window.onclick = function (event) {
+    if (event.target === modal) {
       modal.style.display = "none";
     }
   };
+
+  // CAROSUEL Design
 
   // const newDrpDown = () => {
   //   document.getElementsByClassName(".Tryme").style.visibility = "visible";
