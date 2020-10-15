@@ -34,7 +34,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--hovercolor);
+  color: var(--hover-color);
 }
 
 p {
@@ -167,6 +167,7 @@ main #hero-banner .download {
 }
 main #hero-banner .download a {
   font-size: 2rem;
+  color: white;
 }
 main #hero-banner .download:hover {
   background-color: var(--hover-color);
