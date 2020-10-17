@@ -117,6 +117,22 @@ span.psw a {
   color: blue;
 }
 
+/**** notification popup *****/
+#notification {
+  width: 40%;
+  height: 30%;
+  background-color: antiquewhite;
+  color: black;
+  font: "Ubuntu Mono", monospace;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  display: none;
+}
 /**************Collage Styleing********/
 main h1,
 p {

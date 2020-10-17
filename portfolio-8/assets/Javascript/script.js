@@ -17,7 +17,15 @@
     }
   };
 
- 
+ //notification popup
+
+ var notif = document.getElementById('notification');
+ window.onclick = function(event){
+   if (event.target ===notif){
+     modal.style.display ="none";
+   }
+ };
+
   var form = document.getElementsByClassName("messageForm");
 
   form.addEventListener("submit", function(k){

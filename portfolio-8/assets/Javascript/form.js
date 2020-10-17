@@ -8,10 +8,17 @@ function loginVerification(x) {
   x.preventDefault();
   console.log("Verifying.........");
 
+  console.log("User Name: " + getUserName());
   console.log("User Email: " + getUserEmail());
+  console.log("User Password: " + getUserPassword());
+  console.log("Repeat password: " + getUserConfirmPassword());
 
-  if (verifyEmail()) {
-    return console.log("password verified");
+  if (verifyName() && verifyPassword() && verifyEmail()) {
+    return (
+      (document.getElementById("id01").style.display = "none"),
+      (document.getElementById("notification").style.display = "block"),
+      window.open("http://127.0.0.1:5500/portfolio-8/myanimation.html", "_self")
+    );
   }
 }
 
@@ -66,7 +73,7 @@ function verifyPassword() {
   if (
     myPassword === repeatPassword &&
     myPassword.indexOf(" ") < 0 &&
-    myPassword.length >= 7
+    myPassword.length >= 2
   ) {
     return true;
   } else {
