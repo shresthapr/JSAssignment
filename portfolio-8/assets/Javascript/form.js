@@ -73,7 +73,7 @@ function verifyPassword() {
   if (
     myPassword === repeatPassword &&
     myPassword.indexOf(" ") < 0 &&
-    myPassword.length >= 2
+    myPassword.length >= 7
   ) {
     return true;
   } else {
