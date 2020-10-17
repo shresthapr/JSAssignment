@@ -12,16 +12,27 @@ function loginVerification(x) {
   console.log("User Password: " + getUserPassword());
   console.log("Repeat Password: " + getUserConfirmPassword());
 
-  if (verifyPassword()) {
+  if (verifyName()) {
     return console.log("password verified");
   }
+  $("id01").empty();
+  document.modal.reset();
 }
 
 //Get Name
 function getUserName() {
   return $('[name="user_name"]').val();
 }
-
+//Verify Name
+function verifyName() {
+  var myName = getUserName();
+  if (myName !== "" && myName.indexOf(" ") < 0) {
+    return true;
+  } else {
+    document.getElementById("error1").innerHTML =
+      "Name can not be empty use space!!";
+  }
+}
 //Get Email
 function getUserEmail() {
   return $('[name="user_email"]').val();
