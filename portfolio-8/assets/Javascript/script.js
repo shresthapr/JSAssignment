@@ -17,51 +17,14 @@
     }
   };
 
- //notification popup
-
- var notif = document.getElementById('notification');
- window.onclick = function(event){
-   if (event.target ===notif){
-     modal.style.display ="none";
-   }
- };
-
-  var form = document.getElementsByClassName("messageForm");
-
-  form.addEventListener("submit", function(k){
-    let errormessage = [];
-    var atScore = yourEmail.indexOf('@');
-    if (yourEmail.value ==
-  })
-
-  // LOG in information validation
-
-  function validateEmail(){
-    var _email = getEmail();
-
-    if (checkSpace(_email) === true) {
-        return false;
+  //notification popup
+  var notif = document.getElementById("notification");
+  window.onclick = function (event) {
+    if (event.target === notif) {
+      modal.style.display = "none";
     }
+  };
 
-    // check for @
-    var atSymbol = _email.indexOf('@');
-    if(atSymbol < 1) {
-        return false;
-    }
-
-  // check if there is a dot located less than 2 symbols away from the @ sign
-  var dot = _email.indexOf('.');
-  if(dot <= atSymbol + 2) {
-      return false;
-  } 
-
-  // check that the dot is not at the end
-  if (dot === _email.length - 1){
-      return false;
-  } 
-
-  return true;
-  }
   // const name = document.getElementById("name");
   // const password = document.getElementById("password");
   // const form = document.getElementById("form");
