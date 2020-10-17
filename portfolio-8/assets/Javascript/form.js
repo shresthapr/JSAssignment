@@ -7,16 +7,12 @@ var passwordConfirm = document.getElementById("confirm-password");
 function loginVerification(x) {
   x.preventDefault();
   console.log("Verifying.........");
-  console.log("User Name: " + getUserName());
-  console.log("User Email: " + getUserEmail());
-  console.log("User Password: " + getUserPassword());
-  console.log("Repeat Password: " + getUserConfirmPassword());
 
-  if (verifyName()) {
+  console.log("User Email: " + getUserEmail());
+
+  if (verifyEmail()) {
     return console.log("password verified");
   }
-  $("id01").empty();
-  document.modal.reset();
 }
 
 //Get Name
@@ -39,7 +35,22 @@ function getUserEmail() {
 }
 
 //Verify Email
-
+function verifyEmail() {
+  var myEmail = getUserEmail();
+  if (myEmail === "" || myEmail.indexOf(" ") > -1) {
+    document.getElementById("error2").innerHTML = "Input can not be empty!!!";
+  }
+  var atsymbol = myEmail.indexOf("@");
+  var dotsymbol = myEmail.indexOf(".");
+  if (
+    atsymbol < 1 ||
+    dotsymbol < atsymbol + 2 ||
+    dotsymbol === myEmail.length - 1
+  ) {
+    document.getElementById("error2").innerHTML = "Input valid email!!! ";
+  }
+  return true;
+}
 //Get Password
 function getUserPassword() {
   return $('[name="password"]').val();
