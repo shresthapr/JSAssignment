@@ -23,7 +23,7 @@
     />
     <meta name="author" content="Prajan Shrestha" />
     <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
-    <title>Portfolio 7</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/CSS/style.css" />
     <link rel="stylesheet" href="./assets/CSS/gallery.css" />
     <link
@@ -43,6 +43,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script
+      src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -100,6 +110,16 @@
             Images source:
             <a href="https://unsplash.com/" target="_blank">Unsplash</a>
           </p>
+          <button
+            onclick="document.getElementById('mapmodel').style.display='block'"
+            id="location-button"
+            style="width: auto"
+          >
+            Show my location
+          </button>
+          <div id="mapmodel">
+            <div style="width: 640px; height: 480px" id="mapContainer"></div>
+          </div>
           <button
             onclick="document.getElementById('id01').style.display='block'"
             style="width: auto"
