@@ -23,7 +23,7 @@
     />
     <meta name="author" content="Prajan Shrestha" />
     <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
-    <title>Portfolio 8</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./assets/CSS/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
@@ -72,11 +72,23 @@
           <li>
             <a>More <i class="fas fa-caret-down"></i></a>
             <ul>
+              <!----------------DropDown--------------------->
               <li><a href="myanimation.html">Animation</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#footer">Contact me</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/prajan-shrestha-505259113/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#index.html">
+                  <span class="material-icons"> share</span></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/shresthapr" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -84,83 +96,88 @@
     </header>
     <main>
       <section id="hero-banner">
-        <h1>Welcome to my <span>Portfolio</span> page</h1>
+        <h1>Get to Know<span> Prajan Shrestha</span> here</h1>
+        <div id="download" class="download">
+          <a href="./assets/Files/Resume_Shrestha_Prajan..pdf" download
+            >Download Resume</a
+          >
+        </div>
+        <div class="download">
+          <a href="./assets/Files/Resume_Shrestha_Prajan..pdf" target="_blank"
+            >Open Resume</a
+          >
+        </div>
       </section>
-
+      <!-----------Work------------------->
       <section id="work">
         <div class="container">
           <h2>Work</h2>
           <div class="work_boxes">
             <div class="box">
               <img
-                src="https://source.unsplash.com/1600x900/?time"
-                alt="time"
+                src="https://source.unsplash.com/1600x900/?software"
+                alt="software"
               />
-              <h3>Lorem ipsum dolor sit</h3>
+              <h3>Software Developer</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti, voluptate?
-              </p>
-              <a href="#">See more</a>
-            </div>
-            <div class="box">
-              <img src="https://source.unsplash.com/1600x900/?car" alt="time" />
-              <h3>Lorem ipsum dolor sit</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti, voluptate?
+                Student: Full Stack Web Developer, Helsinki Business College
+                since August 2020.
               </p>
               <a href="#">See more</a>
             </div>
             <div class="box">
               <img
-                src="https://source.unsplash.com/1600x900/?plane"
-                alt="time"
+                src="https://source.unsplash.com/1600x900/?chef"
+                alt="chef"
               />
-              <h3>Lorem ipsum dolor sit</h3>
+              <h3>Chef</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti, voluptate?
+                Trained chef, ethnic cusine of Kathmandu, Hawaiian and Korean
+                cusine.
+              </p>
+              <a href="#">See more</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/1600x900/?Engineer"
+                alt="Engineer"
+              />
+              <h3>Building Engineer</h3>
+              <p>
+                Six months of work experience in site supervision and project
+                assitant.
               </p>
               <a href="#">See more</a>
             </div>
           </div>
         </div>
       </section>
+      <!-----------Experience------------------->
       <section id="experience">
         <img src="https://source.unsplash.com/1600x900/?time" alt="time" />
         <div class="content">
           <h2>Experience</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem delectus consequatur, unde laborum doloremque, et
-            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
-            ratione accusantium eos explicabo, nulla harum architecto iste
-            delectus dignissimos atque impedit cum ab error reiciendis.
+            Three months of front end web development experience. Working
+            proficieny in HTML and CSS and Javascript. Three months of
+            experience in the field of User interface and User experience.
+            Experience in managing projects independently.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem delectus consequatur, unde laborum doloremque, et
-            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
-            ratione accusantium eos explicabo, nulla harum architecto iste
-            delectus dignissimos atque impedit cum ab error reiciendis.
+            More than two years of experience in variety of ethnic cusine of
+            Kathmandu. Six months of training in Hawaiian and Korean cusine.
+            Three years of work experience in service and dining. Kitchen
+            planning and kitchen work management.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem delectus consequatur, unde laborum doloremque, et
-            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
-            ratione accusantium eos explicabo, nulla harum architecto iste
-            delectus dignissimos atque impedit cum ab error reiciendis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem delectus consequatur, unde laborum doloremque, et
-            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
-            ratione accusantium eos explicabo, nulla harum architecto iste
-            delectus dignissimos atque impedit cum ab error reiciendis.
+            Six years of working experience in construction industry. Site
+            supervision and site inspection. Project assistance in project
+            management and structural design. Active role in sustaiablity and
+            waste management in construction site.
           </p>
         </div>
       </section>
+      <!-----------Skills------------------->
       <section id="skills">
         <div class="container">
           <h2>Skills</h2>
@@ -189,28 +206,33 @@
         </div>
       </section>
     </main>
+
+    <!-----------footer------------------->
     <footer id="footer">
       <h2>Contact me</h2>
-      <form>
+      <form id="messageForm">
         <div class="form-group">
+          <div id="error"></div>
           <label for="name">Your name</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" required />
         </div>
         <div class="form-group">
           <label for="email">Your email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </div>
         <div class="form-group">
           <label for="message">Message to me</label>
-          <textarea name="message" id="message"></textarea>
+          <textarea name="message" id="message" required></textarea>
         </div>
         <button type="submit">Send message</button>
+        <input id="resetme" type="reset" />
       </form>
-      <p>Copyright &copy; My Website 2020</p>
+      <p>Copyright &copy; Prajan Shrestha 2020</p>
       <div id="scrolltop">
         <a href="#"><i class="fas fa-chevron-up"></i></a>
       </div>
     </footer>
+    <!----------------Script---------------------->
     <script src="./assets/Javascript/script.js"></script>
   </body>
 </html>

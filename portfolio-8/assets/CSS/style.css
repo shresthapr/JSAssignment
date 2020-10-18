@@ -34,7 +34,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--hovercolor);
+  color: var(--hover-color);
 }
 
 p {
@@ -143,6 +143,7 @@ main #hero-banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 main #hero-banner h1 {
@@ -154,9 +155,26 @@ main #hero-banner h1 {
 
 main #hero-banner h1 span {
   color: var(--hover-color);
+  z-index: 3;
 }
 
-main #hero-banner::before {
+main #hero-banner .download {
+  color: var(--hover-color);
+  color: white;
+  padding: 1rem;
+  z-index: 3;
+  margin-top: 1rem;
+}
+main #hero-banner .download a {
+  font-size: 2rem;
+  color: white;
+}
+main #hero-banner .download:hover {
+  background-color: var(--hover-color);
+  color: var(--bright-color);
+  border-radius: 8px;
+}
+main #hero-banner .download main #hero-banner::before {
   position: absolute;
   content: "";
   height: inherit;
@@ -330,10 +348,10 @@ footer form button {
   background-color: var(--hover-color);
   border-radius: 5px;
   border: none;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   color: var(--bright-color);
   font-size: inherit;
-  margin-left: -50px;
+  margin-left: 12rem;
 }
 
 footer form button:hover {
@@ -341,7 +359,21 @@ footer form button:hover {
   background-color: var(--link-color);
   transition: all 0.4s;
 }
-/*---------FORm Section ENDS--------*/
+
+#footer #resetme {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font: var(--font-regular);
+  border: none;
+  box-shadow: 2px 2px 0px var(--dark-color);
+  margin-left: 4rem;
+}
+
+#footer p {
+  padding-top: 1rem;
+}
+
+/*---------FORM Section ENDS--------*/
 /**** SCROLL TOP *******/
 
 #scrolltop {
@@ -399,6 +431,10 @@ footer form button:hover {
   footer form button {
     width: 100%;
     margin: 0;
+  }
+  #footer #resetme {
+    margin-top: 1rem;
+    margin-left: 0rem;
   }
   #scrolltop {
     right: 1rem;
@@ -500,6 +536,9 @@ footer form button:hover {
   }
   footer form .form-group label {
     margin-bottom: 0.1rem;
+  }
+  #footer #resetme {
+    padding: 0.8rem 2rem;
   }
   #footer p {
     margin-top: 1rem;

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TLQQXRK");
-    </script>
-    <!-- End Google Tag Manager -->
+   <!-- Google Tag Manager -->
+   <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TLQQXRK");
+  </script>
+  <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -23,7 +23,7 @@
     />
     <meta name="author" content="Prajan Shrestha" />
     <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
-    <title>Portfolio 8</title>
+    <title>Portfolio </title>
     <link rel="stylesheet" href="./assets/CSS/style.css" />
     <link rel="stylesheet" href="./assets/CSS/animation.css" />
     <link
@@ -45,16 +45,16 @@
     />
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TLQQXRK"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+ <!-- Google Tag Manager (noscript) -->
+ <noscript
+ ><iframe
+   src="https://www.googletagmanager.com/ns.html?id=GTM-TLQQXRK"
+   height="0"
+   width="0"
+   style="display: none; visibility: hidden"
+ ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <header>
       <div id="logo">
         <a href="index.html">MyWeb</a>
@@ -64,6 +64,7 @@
         <a onclick="mobilemenu()" href="#" class="icon"
           ><span class="material-icons"> menu</span></a
         >
+              <!----------------DropDown---------------------->
         <ul>
           <li><a href="index.html#work">Work</a></li>
           <li><a href="index.html#experience">Experience</a></li>
@@ -73,10 +74,22 @@
           <li>
             <a>More <i class="fas fa-caret-down"></i></a>
             <ul>
-              <li><a href="index.html#work">Work</a></li>
-              <li><a href="index.html#experience">Experience</a></li>
-              <li><a href="index.html#skills">Skills</a></li>
-              <li><a href="#footer">Contact me</a></li>
+             
+              <li>
+                <a href="https://www.linkedin.com/in/prajan-shrestha-505259113/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#index.html">
+                  <span class="material-icons"> share</span></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/shresthapr" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -85,6 +98,7 @@
     <main>
       <section id="hero-banner">
         <h1>Welcome to my <span>Portfolio</span> page</h1>
+              <!----------------Animation---------------------->
         <div class="leaf">
             <div><img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
             <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
@@ -97,7 +111,7 @@
           </div>
       </section>
     </main>
-    
+          <!----------------Footer---------------------->
     <footer id="footer">
       <h2>Contact me</h2>
       <form>
@@ -114,12 +128,14 @@
           <textarea name="message" id="message"></textarea>
         </div>
         <button type="submit">Send message</button>
+        <label for="reset"> <input id="resetme" type="reset"  /></label>
       </form>
-      <p>Copyright &copy; My Website 2020</p>
+      <p>Copyright &copy; Prajan Shrestha 2020</p>
       <div id="scrolltop">
         <a href="#"><i class="fas fa-chevron-up"></i></a>
       </div>
     </footer>
+          <!----------------Script---------------------->
     <script src="./assets/Javascript/script.js"></script>
   </body>
 </html>
