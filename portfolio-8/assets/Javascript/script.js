@@ -49,4 +49,14 @@
       mapbox.style.display = "none";
     }
   });
+
+  /*
+
+dependencies:
+
+//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js
+//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js
+//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js
+
+*/
 })(window.jQuery);
